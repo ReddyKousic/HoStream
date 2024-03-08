@@ -1,0 +1,31 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>512 ka Cloud</title>
+</head>
+<body>
+    <h1>512 ka Cloud</h1>
+    <ul>
+        {% for movie in movies %}
+            <li><a href="{{ url_for('stream_movie', filename=movie) }}" target="_blank">{{ movie }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>512 ka cloud</title>
+</head>
+<body>
+    <h1>512 ka cloud</h1>
+    <p>Connected from: {{ client_hostname }}</p>
+    <ul>
+        {% for movie in movies %}
+            <li><a href="{{ url_for('stream_movie', filename=movie) }}">{{ movie }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
